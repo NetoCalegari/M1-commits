@@ -3,14 +3,29 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.content-holder {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  /* width: 1000px; */
+}
+
 .title-holder {
   display: flex;
   justify-content: center;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .text-holder {
   display: flex;
   justify-content: center;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .text {
@@ -20,12 +35,37 @@ body {
   margin-top: 105px;
 }
 
+.user-holder {
+  display: flex;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .list-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   margin-top: 30px;
+  width: 700px;
+}
+
+.profile {
+  display: flex;
+  overflow: hidden;
+  border-radius: 7px;
+  border: solid 2px black;
+}
+
+.profile:hover {
+  border: solid 2px white;
+  border-radius: 7px;
+  transition-duration: .4s;
+}
+
+li {
+  list-style: none;
+  width: 160px;
 }
 
 figure {
@@ -33,13 +73,13 @@ figure {
   height: 160px;
 }
 
-#figure-plus img {
+/* #figure-plus img {
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 #figure-plus {
   text-align: center;
@@ -54,17 +94,13 @@ figure {
 }
 
 .profile-image {
-  border-radius: 7px;
   transition: .3s;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .profile-image:hover {
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-width: 2px;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .name-holder {
@@ -86,6 +122,9 @@ figure {
 .button-holder {
   display: flex;
   justify-content: center;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .manage-button {
